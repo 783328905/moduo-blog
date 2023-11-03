@@ -1,0 +1,22 @@
+server:
+  port: 8080
+netty:
+  port: 8081
+  path: /chat
+resources:
+  static-locations:
+    - classpath:/static/
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://101.132.126.62/myweb?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 783328905
+    thymeleaf:
+      cache: false
+      checktemplatelocation: true
+      enabled: true
+      encoding: UTF-8
+      mode: HTML5
+      prefix: classpath:/templates/
+      suffix: .html
